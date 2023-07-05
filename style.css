@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+body{
+    background-color: var(--VeryDarkBlue);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--White);
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rating{
+    background-color: var(--DarkBlue);
+    width: 400px;
+    max-height: 450px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.star{
+    background-color: var(--DarkBlue);
+    box-shadow: 2px 2px 14px 0px rgb(25, 30, 37);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+.svgstar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text_1{
+    padding: 20px 0;
+}
+.text_2{
+    color: var(--MediumGrey);
+    padding-bottom: 20px;
+    line-height: 22px;
+    font-size: 18px;
+}
+.rates{
+    padding-top: 20px;
+    display: flex;
+    gap: 25px;
+}
+.rate{
+    background-color: var(--DarkBlue);
+    box-shadow: 2px 2px 14px 0px #191e25;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+.rate span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rate:hover{
+    background-color: var(--LightGrey);
+}
+button{
+    width: 100%;
+    margin-top: 23px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-weight: 600;
+    font-size: 16px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+
+/* -----Thank You Section------- */
+.result.hidden{
+    display: none;
+}
+.result{
+    background-color: var(--DarkBlue);
+    width: 400px;
+    max-height: 450px;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.result img{
+    padding-bottom: 20px;
+}
+.output{
+    background-color: var(--VeryDarkBlue);
+    padding: 12px;
+    border-radius: 16px;
+    color: var(--Orange);
+}
+.thank{
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+.thank_msg{
+    color: var(--MediumGrey);
+    line-height: 25px;
+    letter-spacing: 1.2px;
+}
+.active{
+    background-color: var(--Orange);
+}
