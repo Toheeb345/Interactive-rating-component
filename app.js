@@ -10,10 +10,12 @@ for( let key of keys){
     const value = key.dataset.key 
 
     key.addEventListener('click', () => {
-        // key.style.backgroundColor = '#fb7413';
-        key.classList.toggle('active')
+        
+        // key.style.backgroundColor = '#fb7413';        
         output.innerHTML = `You selected ${value} out of 5`;
-        setInterval(() => {
+        key.classList.add('active')
+      
+        setTimeout(() => {
         key.classList.remove('active')
         },3000)
     })
