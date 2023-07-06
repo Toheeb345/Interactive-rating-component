@@ -72,6 +72,7 @@ body{
     position: relative;
     transition: .2s ease-in;
     cursor: pointer;
+    user-select: none;
 }
 .rate span{
     position: absolute;
@@ -94,6 +95,7 @@ button{
     font-size: 16px;
     transition: .2s ease-in;
     cursor: pointer;
+    user-select: none;
 }
 button:hover{
     background-color: var(--White);
